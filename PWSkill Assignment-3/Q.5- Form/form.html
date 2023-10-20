@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resistration Form</title>
+</head>
+<body>
+    <h1>Student Resistration Form</h1>
+    <form action="/student_form" method="post">
+        <table>
+            <tr>
+                <th> Field </th>
+                <th> Data </th>
+            </tr>
+            <tr>
+                <td><label for="name"> Student First Name: </label></td>
+                <td> <input type="text" id="name" placeholder="Student First Name" required minlength="3" maxlength="15" required /></td>
+            </tr>
+            <tr>
+                <td><label for="name"> Student Last Name: </label></td>
+                <td> <input type="text" id="name" placeholder="Student Last Name" required minlength="3" maxlength="15" required></td>
+            </tr>
+            <tr>
+                <td><label for="fname"> Father Name: </label></td>
+                <td> <input type="text" id="fname" placeholder=" Father Name" required minlength="3" maxlength="15" required ></td>
+            </tr>
+            <tr>
+                <td><label for="mname"> Mother Name: </label></td>
+                <td> <input type="text" id="mname" placeholder="Mother Name" required minlength="3" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td><label for="address"> Address: </label></td>
+                <td><textarea name="Address" id="" cols="30" rows="10" placeholder="Address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="bgroup"> Blood Group: </label></td>
+                <td> <input type="text" id="bgroup" placeholder="Blood Group"></td>
+            </tr>
+            <tr>
+                <td><label for="email"> Email: </label></td>
+                <td> <input type="email" name="email" id="email" placeholder="abc......@gmail.com" required minlength="3" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td><label for="pass"> Passward: </label></td>
+                <td><input type="password" name="Passward" id="pass" placeholder="*********" required minlength="8"></td>
+            </tr>
+            <tr>
+                <td><label for="cpass">Confirm Passward: </label></td>
+                <td><input type="password" name="Confirm Passward" id="cpass" placeholder="*********" required minlength="8"></td>
+            </tr>
+            <tr>
+                <td><label for="age"> Age: </label></td>
+                <td> <input type="number" name="Age" id="age" placeholder="Age" required min="0" max="150" ></td>
+            </tr>
+            <tr>
+                <td><label for="dob"> DOB </label></td>
+                <td><input type="date" name="DOB" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="gender"> Gender: </label></td>
+                <td><input type="radio" id="male" value="male">
+                    <label for="male"> Male </label>
+                    <input type="radio" id="fmale" value="fmale">
+                    <label for="fmale"> Female </label>
+                    <input type="radio" id="other" value="other">
+                    <label for="other"> Other </label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="course"> Course </label></td>
+                <td>
+                    <select name="Course"> 
+                        <option value="B.tech"> B.tech </option>
+                        <option value="M.tech"> M.tech </option>
+                        <option value="MCA"> MCA </option>
+                        <option value="BCA"> BCA </option>
+                        <option value="B.com"> B.com </option>
+                        <option value="M.com"> M.com </option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> Term: </td>
+                <td> <input type="checkbox" required> I agree term and condition</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="reset"> Reset </button>
+                    <button type="submit"> Submit </button>
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+    
+</body>
+</html>
